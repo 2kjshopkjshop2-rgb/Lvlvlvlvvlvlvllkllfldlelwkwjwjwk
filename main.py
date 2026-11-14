@@ -44,7 +44,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ACCOUNTS_FILE = os.path.join(BASE_DIR, 'accounts.txt')
 
 # المدة الثابتة: 5 دقائق
-USER_SPAM_TIME = 5 * 60
+USER_SPAM_TIME = 3 * 24 * 60 * 60
 SOFT_RESTART_INTERVAL = 700
 
 connected_clients, connected_clients_lock = {}, threading.Lock()
@@ -58,7 +58,7 @@ targets_list, targets_lock = [], threading.Lock()
 targets_index = 0
 targets_info_cache, targets_info_lock = {}, threading.Lock()
 target_states, target_states_lock = {}, threading.Lock()
-TARGET_DURATION_SECONDS = USER_SPAM_TIME
+TARGET_DURATION_SECONDS = 259200
 MAX_TARGETS = 100
 target_expiry_times, target_timers_lock = {}, threading.Lock()
 
