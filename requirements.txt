@@ -10,3 +10,4 @@ fastapi
 uvicorn
 protobuf
 requests
+PyJWT
